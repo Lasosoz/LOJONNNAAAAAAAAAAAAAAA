@@ -1,0 +1,188 @@
+/* Estilos Globais */
+* {
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+header {
+    background-color: rgb(42, 137, 150);
+    height: 5.6rem;
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.search-wrapper {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: rgb(42, 137, 150);
+}
+
+.banner {
+    background-image: url('labriise.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form.glass {
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    width: 300px;
+    color: aliceblue;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+button.clear {
+    background: white;
+    border: none;
+    color: rgb(33, 22, 22);
+}
+
+button.solid {
+    background: white;
+    border: none;
+    color: rgb(45, 211, 111);
+}
+
+button.outline {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+button[disabled] {
+    opacity: 0.8;
+    color: grey;
+}
+
+
+footer {
+    background-color: rgb(15, 96, 107); 
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff69b4;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.payment-methods {
+    margin: 1rem 0;
+}
+
+.payment-methods h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ff69b4; 
+}
+
+.payment-methods p {
+    font-size: 1rem;
+}
+
+.footer-bottom {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}

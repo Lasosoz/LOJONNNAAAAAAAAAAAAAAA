@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos - Lebriise</title>
+    <link rel="stylesheet" href="stylecadastro.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="home.html" class="logo">
+                <img src="labriise__1_-removebg-preview.png" alt="Logo">
+            </a>
+            <div class="search-wrapper">
+                <input type="search" id="search-input" placeholder="Pesquise o nome do produto aqui"/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="ativo">Home</a></li>
+                    <li><a href="indexcadastro.html">Cadastro de Produtos</a></li>
+                    <li><a href="index.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="form-container">
+            <div class="form-box">
+                <h1>Cadastro de Produtos</h1>
+                <form id="cadastro-produto">
+                    <input type="text" id="codigo" placeholder="Código" required>
+                    <input type="text" id="produto" placeholder="Nome do Produto" required>
+                    <input type="text" id="categoria" placeholder="Categoria" required>
+                    <input type="text" id="quantidade" placeholder="Quantidade" required>
+                    <input type="text" id="valor" placeholder="Valor do Produto" required>
+                    <input type="file" id="foto" accept="image/*" required>
+                    <input id="cadastrarProduto" type="submit" value="Cadastrar Produto">
+                </form>
+            </div>
+
+            <div class="form-box">
+                <h1>Busca e Atualização de Produtos</h1>
+                <form id="busca-produto">
+                    <input type="text" id="idProduto" placeholder="ID do Produto" required>
+                    <input id="buscarProduto" type="submit" value="Buscar Produto" class="btn-blue">
+                    <input type="text" id="dadoProduto" placeholder="Produto">
+                    <input type="text" id="dadoCategoria" placeholder="Categoria">
+                    <input type="text" id="dadoQuantidade" placeholder="Quantidade">
+                    <input type="text" id="dadoValor" placeholder="Valor do Produto">
+                    <input type="file" id="foto" accept="image/*">
+                    <img id="imgPreview" src="" alt="Pré-visualização da Imagem" style="max-width: 200px; display: block; margin-top: 10px;">
+                    <input id="atualizarProduto" type="submit" value="Atualizar Produto" class="btn-purple">
+                    <input id="deletarProduto" type="submit" value="Deletar Produto" class="btn-dark-purple">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="scriptcadastro.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="firebaseConfig.js"></script>
+</body>
+</html>

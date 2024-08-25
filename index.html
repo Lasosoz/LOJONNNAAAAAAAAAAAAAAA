@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="labriise__5_-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lebriise - Adesivos, canecas personalizadas e muito mais!</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="home.html" class="logo">
+                <img src="labriise__1_-removebg-preview.png" alt="Logo">
+            </a>
+            <div class="search-wrapper">
+                <input type="search" id="search-input" placeholder="Pesquise o nome do produto aqui"/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="ativo">Home</a></li>
+                    <li><a href="indexcadastro.html">Cadastro de Produtos</a></li>
+                    <li><a href="index.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="conteudo">
+            <form class="glass">
+                <div>
+                    <label>Digite seu Email</label>
+                    <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="validateFields()"/>
+                </div>
+                <div>
+                    <label>Digite sua Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Senha" onchange="validateFields()"/>
+                </div>
+                <div>
+                    <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
+                </div>
+                <div>
+                    <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar senha</button>
+                </div>
+                <div>
+                    <button type="button" class="outline" onclick="registrar()">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Labriise</h3>
+            <p>Adesivos, canecas personalizadas e muito mais!</p>
+            <p>Contato: (99) 1234-5678</p>
+            <div class="payment-methods">
+                <h4>Formas de Pagamento:</h4>
+                <p>Visa, Mastercard, PayPal, Boleto, Pix</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lebriise. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="firebaseConfig.js"></script>
+</body>
+</html>

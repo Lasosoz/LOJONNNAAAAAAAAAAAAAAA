@@ -1,0 +1,268 @@
+body{
+    background-color: rgb(5, 39, 70);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+header {
+    background-color: rgb(42, 137, 150);
+    height: 5.6rem;
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.search-wrapper {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.ativo {
+    background-color: #ffffff;
+    color: rgb(42, 137, 150);
+}
+
+.letreiro {
+    background-color: #006568; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 5.6rem;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.letreiro h1, .letreiro p {
+    margin: 0;
+}
+
+main {
+    padding: 2rem 5rem;
+}
+
+.adesivos, .canecas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.produto {
+    text-align: center;
+    width: 20%;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.produto h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto; 
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.footer-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff69b4; 
+}
+
+.footer-content p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.payment-methods {
+    margin: 1rem 0;
+}
+
+.payment-methods h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ff69b4; 
+}
+
+.payment-methods p {
+    font-size: 1rem;
+}
+
+.footer-bottom {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.produto-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.produto-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-add-carrinho {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-add-carrinho:hover {
+    background-color: #0056b3;
+}
+
+.produtos-container {
+    padding: 2rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.produto-item {
+    text-align: center;
+    width: 300px; 
+    background-color: rgb(42, 137, 150); 
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+
+.produto-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5rem;
+}
+
+
+.produto-item h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-top: 0.5rem;
+}
+
+
+.produto-item p {
+    color: #ffffff;
+    margin: 0.25rem 0;
+}
+
+.btn-add-carrinho {
+    background-color: #006568; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+
+.btn-add-carrinho:hover {
+    background-color: #004d4d;
+}
+
+
+.produto-img-placeholder {
+    width: 100%;
+    height: auto;
+    background-color: #cccccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666666;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
